@@ -1,0 +1,170 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.full {
+    font-family: Arial, sans-serif;
+    background-color: #FEFDED;
+}
+
+.nav {
+    background-color: #b5c0d0;
+    padding: 0 10px;
+    /* Remove top padding and adjust left/right padding as needed */
+    height: 60px;
+    /* Increase the height as needed */
+    font-family: 'Lobster', cursive;
+}
+
+.nav-left {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.nav-right {
+    float: right;
+    font-size: 24px;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-right ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.nav-right ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.context {
+    font-size: 20px; /* Increase the font size */
+    font-family: 'Lobster'; /* Change the font */
+    text-align: center;
+}
+
+
+.title p {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    /* Add custom font */
+}
+
+.text {
+    background-image: url(image/IMG_1478.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    /* Adjust the height as needed */
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    font-size: 30px; /* Increase the font size */
+    font-family: 'Lobster', cursive; /* Change the font */
+    color: #fff;
+    /* Adjust the maximum width as needed */
+}
+
+.section-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-size: 20px; /* Increase the font size */
+    font-family: 'Lobster', cursive; /* Change the font */
+}
+
+.area {
+    display: flex;
+    align-items: flex-start;
+}
+
+.area .heatmaps-area {
+    flex: 1;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.area .chart2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area .chart2>div {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#area-chart-container {
+    height: 400px;
+}
+
+#pie-chart-container {
+    height: 400px;
+}
+
+#color-hue-wrapper {
+    margin-bottom: 10px;
+}
+
+#year-slider {
+    width: 800px;
+}
+
+footer {
+    background-color: #b5c0d0;
+    padding: 20px;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    height: max-content;
+}
+
+footer hr {
+    border-top: 1px solid #fff;
+    /* width: max-content; */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}

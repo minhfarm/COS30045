@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    <script src="Heatmap.js"></script>
+    <link href="home.css" rel="stylesheet">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full">
+        <!-- nav bar -->
+        <nav class="nav">
+            <div class="">
+                <span class="nav-left">Migration</span>
+                <div class="nav-right">
+                    <ul class="">
+                        <li>
+                            <a href="home.html" class="">Home</a>
+                        </li>
+                        <li>
+                            <a href="project.html" class="">Heatmaps</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- the chart -->
+        <section>
+            <!-- tile -->
+            <div class="title">
+                <p> Number of refugees migrating from a country</p>
+            </div>
+            <div class="context">
+                <p>Exploring the pattern and trend of the total numbers of refugees migrate from a specific country the
+                    world
+                <p>How to use: selected the country that you want to explore, selected the year using the
+                    year slider .</p>
+                We can see the pattern and trend of data in the area maps, and the propotion in the pie chart
+            </div>
+
+
+            <!-- lable and slide -->
+
+            <div>
+                <div class="area">
+                    <!-- heatmaps area -->
+                    <div>
+                        <div>
+                            <div id="color-hue-wrapper">
+                                <select id="color-hue-select">
+                                    <option value="normal" id="normal">Normal view</option>
+                                    <option value="color-blind" id="color-blind">Color-blind view</option>
+                                </select>
+                            </div>
+                            <div id="heatmap-container">
+                                <div class="pl-3">
+                                    <label for="year-slider" class=""> Year: <span id="year-display"></span> </label>
+
+                                    <input type="range" id="year-slider" min="1980" max="2021" value="2021" class=""
+                                        style="width: 800px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- area chart and pie chart -->
+                    <div>
+                        <div class="chart2">
+                            <div>
+                                <div id="area-chart-container" class=""></div>
+                            </div>
+                            <div>
+                                <div id="pie-chart-container" class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <hr />
+            <a>Authors: Pham Tuan Minh, Tran Minh Dung</a>
+        </footer>
+    </div>
+</body>
+
+</html>
